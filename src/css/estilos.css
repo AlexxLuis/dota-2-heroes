@@ -1,0 +1,163 @@
+body {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.carrossel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.informacoes {
+	display: none;
+}
+
+.informacoes.ativa {
+	display: block;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 100vh;
+	font-family: "MedievalSharp", cursive;
+}
+
+.informacoes h1 {
+	font-size: 50px;
+	color: #ffffff;
+	margin-bottom: 80px;
+	font-family: "teutonic", sans-serif;
+	letter-spacing: 8px;
+}
+
+@font-face {
+	font-family: "teutonic";
+	src: url(../fontes/teutonic4.ttf);
+}
+
+.informacoes .descricao {
+	width: 70%;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 45px;
+	height: 350px;
+	overflow: auto;
+	padding-right: 10px;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(212, 0, 255, 0.575) transparent;
+
+}
+
+.botoes-carrossel {
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+
+}
+
+.botoes-carrossel .botao {
+	
+	background-color: rgba(141, 2, 255, 0.418);
+	border-radius: 50%;
+	border: 2px solid transparent;
+	cursor: url(https://cur.cursors-4u.net/games/gam-4/gam376.cur), auto;
+
+}
+
+.botoes-carrossel .botao.selecionado {
+	animation: selecaoBotao 0.7s;
+	background-color: rgba(255, 0, 0, 0.418);
+
+}
+
+
+.imagem {
+	width: 100vw;
+	height: 100vh;
+	object-fit: fill;
+	display: none;
+}
+
+.imagem.ativa {
+	display: block;
+	animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem {
+	from {
+		opacity: 0.85;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes selecaoBotao {
+	0% {
+		background-color: red;
+
+	}
+}
+
+main:after {
+	content: "";
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
+}
+
+.botoes-carrossel {
+	display: flex;
+	/* Outras estilizações para alinhar os botões */
+}
+
+.botao {
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+}
+
+.botao.selecionado {
+
+	outline: 3px solid rgba(141, 2, 255, 0.418)
+}
+
+.botao:nth-child(1) {
+	background-image: url(../imagens//Icons/Abbadon.png);
+}
+
+.botao:nth-child(2) {
+	background-image: url(../imagens/Icons/Axe.png);
+}
+
+.botao:nth-child(3) {
+	background-image: url(../imagens/Icons/Brewmaster.png);
+}
+
+.botao:nth-child(4) {
+	background-image: url(../imagens/Icons/Lion.png);
+}
+
+.botao:nth-child(5) {
+	background-image: url(../imagens/Icons/Pugde.png);
+}
+
+.botao:nth-child(6) {
+	background-image: url(../imagens/Icons/Viper.png);
+}
+
+.botao:nth-child(7) {
+	background-image: url(../imagens/Icons/Witch-doctor.png);
+}
