@@ -13,6 +13,11 @@
     gap: 30px;
   
   }
+  .botoes-carrossel .botao.selecionado {
+    animation: selecaoBotao 0.7s;
+    width: 11%;
+    height: 60px;
+  }
 
 }
 
