@@ -49,7 +49,7 @@ body {
 	overflow: auto;
 	padding-right: 10px;
 	scrollbar-width: thin;
-	scrollbar-color: rgba(212, 0, 255, 0.575) transparent;
+	scrollbar-color: rgb(212 0 255 / 40%) transparent;
 
 }
 
@@ -62,16 +62,14 @@ body {
 
 .botoes-carrossel .botao {
 	
-	background-color: rgba(141, 2, 255, 0.418);
-	border-radius: 50%;
-	border: 2px solid transparent;
-	cursor: url(https://cur.cursors-4u.net/games/gam-4/gam376.cur), auto;
-
+background-color: transparent;
+cursor: url(https://cur.cursors-4u.net/games/gam-4/gam376.cur), auto;
 }
 
 .botoes-carrossel .botao.selecionado {
 	animation: selecaoBotao 0.7s;
-	background-color: rgba(255, 0, 0, 0.418);
+	width: 11%;
+	height: 115px;
 
 }
 
@@ -98,12 +96,7 @@ body {
 	}
 }
 
-@keyframes selecaoBotao {
-	0% {
-		background-color: red;
 
-	}
-}
 
 main:after {
 	content: "";
@@ -122,17 +115,13 @@ main:after {
 }
 
 .botao {
-	width: 70px;
-	height: 70px;
+	width: 8%;
+	height: 90px;
 	background-size: cover;
 	border: none;
 	cursor: pointer;
 }
 
-.botao.selecionado {
-
-	outline: 3px solid rgba(141, 2, 255, 0.418)
-}
 
 .botao:nth-child(1) {
 	background-image: url(../imagens//Icons/Abbadon.png);
