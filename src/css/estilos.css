@@ -66,12 +66,7 @@ background-color: transparent;
 cursor: url(https://cur.cursors-4u.net/games/gam-4/gam376.cur), auto;
 }
 
-.botoes-carrossel .botao.selecionado {
-	animation: selecaoBotao 0.7s;
-	width: 11%;
-	height: 115px;
 
-}
 
 
 .imagem {
@@ -115,11 +110,17 @@ main:after {
 }
 
 .botao {
-	width: 8%;
-	height: 90px;
+	width: 80px;
+	height: 75px;
 	background-size: cover;
 	border: none;
 	cursor: pointer;
+}
+
+.botoes-carrossel .botao.selecionado {
+	animation: selecaoBotao 0.7s;
+	width: 100px;
+	height: 90px;
 }
 
 
